@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 800px;
+      height: 200px;
+      /* 解决间隙问题，因为文字都没有了，那也就没有间隙了，但会有个问题：下面的元素文字都无法展示 */
+      font-size: 0;
+    }
+
+    .left {
+      /* 重新定义文字大小，解决父级font-size为0的问题 */
+      font-size: 14px;
+      background-color: red;
+      display: inline-block;
+      height: 200px;
+      width: 200px;
+    }
+
+    .right {
+      font-size: 14px;
+      background: blue;
+      /* 虽然文本在交界处展示，但文本相隔四周的距离就很难控制，所以需要让整个盒子往右移动(左边盒子的宽度) */
+      display: inline-block;
+      width: 600px;
+      height: 200px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      左
+    </div>
+    <div class="right">
+      右
+    </div>
+  </div>
+</body>
+
+</html>

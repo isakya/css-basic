@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 800px;
+      height: 200px;
+    }
+
+    .left {
+      background-color: red;
+      float: left;
+      height: 100%;
+      width: 200px;
+    }
+
+    .right {
+      background: blue;
+      /* 虽然文本在交界处展示，但文本相隔四周的距离就很难控制，所以需要让整个盒子往右移动(左边盒子的宽度) */
+      margin-left: 200px;
+      height: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      左
+    </div>
+    <div class="right">
+      右
+    </div>
+  </div>
+</body>
+
+</html>

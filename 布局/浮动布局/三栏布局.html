@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 800px;
+      height: 200px;
+    }
+
+    .left {
+      background-color: red;
+      /* float: left;
+      height: 100%; */
+      width: 200px;
+
+      /* 也可以用position: absolute; 让元素浮动起来，但必须设置固定高度，因为absolute是无法跟父元素的高度进行绑定的，所以用百分比是无效的 */
+      /* 几乎不用absolute，因为absolute是完全脱离文档流的操作，缺少一些适应性的特性 */
+      /* position: absolute; */
+      /* height: 200px; */
+    }
+
+    .middle {
+      background-color: orange;
+      height: 100%;
+      margin: 0 200px;
+    }
+
+    .right {
+      background: blue;
+      float: right;
+      width: 200px;
+      height: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- 注意需要先写左右，再写中间，不然最右边的盒子会跟在中间的盒子下方展示 -->
+    <div class="left">
+      左
+    </div>
+    <div class="right">
+      右
+    </div>
+
+    <div class="middle">
+      中
+    </div>
+  </div>
+</body>
+
+</html>

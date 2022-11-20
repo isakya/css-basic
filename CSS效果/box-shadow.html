@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      background: red;
+      width: 200px;
+      height: 200px;
+      margin: 100px;
+
+      /* x轴5px y轴5px 模糊10px 扩展区域0px 模糊颜色*/
+      /* box-shadow: 5px 5px 10px 0px rgba(0, 0, 0.2); */
+
+      /* 内阴影inset */
+      /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0.2); */
+
+      /* box-shadow可以用来做边框，点击聚焦的那种 */
+      /* box-shadow: 0 0 0 5px green; */
+
+      /* 扩展变为负值，阴影不会消失，而是缩小 */
+      box-shadow: 100px 100px 0 -92px green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container"></div>
+</body>
+
+</html>

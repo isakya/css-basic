@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      margin: 0 auto;
+      max-width: 800px;
+      font-size: 18px;
+      line-height: 2em;
+      font-family: STKaiti;
+      /* 1、基本用法：x轴偏移，y轴偏移，扩展区域 */
+      /* text-shadow: 1px 1px 0px #aaa; */
+      /* 2、值只给扩展区域，可以营造字体边缘模糊感 */
+      /* text-shadow: 0 0 1px rgba(128, 128, 128, .9); */
+      /* 3、特殊效果 */
+      background: black;
+      text-shadow: -1px -1px 0 white,
+        -1px 1px 0 white,
+        1px -1px 0 white,
+        1px 1px 0 white,
+        0 0 2px white;
+    }
+
+    /* 首行缩进2个字符的宽度 */
+    .container p {
+      text-indent: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <p>代表们纷纷表示，科技自立自强是国家强盛之基、安全之要。要进一步健全新型举国体制，强化国家战略科技力量，优化配置创新资源，提升国家创新体系整体效能。</p>
+    <p>科技兴则民族兴，人才强则国家强。</p>
+    <p>抓创新就是抓发展，谋创新就是谋未来。</p>
+  </div>
+</body>
+
+</html>

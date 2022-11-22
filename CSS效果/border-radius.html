@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 100px;
+      height: 100px;
+      background: red;
+      /* 1、圆角 */
+      border-radius: 10px;
+      /* 2、圆 */
+      border-radius: 50%;
+
+      /* 
+      要做出圆形，在有边框的情况会加上边框的像素去计算圆角，
+      如100px的盒子，设置50px圆角，10px的边框，那么要给60px圆角才能变成圆形的效果；设置圆角百分比50%除外。
+      一般情况下就直接设成50%即可，不用考虑边框影响。
+      */
+      border: 50px solid green;
+
+      /* 3、设置边框更详细的写法 */
+      /* 水平方向 垂直方向 */
+      border-top-left-radius: 100px 50px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
+      /* 简写 */
+      /* border-radius: 100px 0 0 0; */
+
+      /* 4、水平方向的圆角值 / 垂直方向的圆角值 */
+      /* border-radius: 10px 10px 10px 10px / 20px 20px 50px 20px; */
+
+      /* 5、如果不给盒子宽度和高度，只给边框再设置圆角，就会出现一些奇奇怪怪的图形 */
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+  </div>
+</body>
+
+</html>

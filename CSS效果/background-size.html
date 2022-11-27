@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 400px;
+      height: 300px;
+      border: 1px solid red;
+      background: url(./images/panda.jpg);
+      /* 横向、纵向居中 */
+      background-position: center top;
+      /* 定义背景图的尺寸，但图片小了会重复，可以用百分比作为单位 */
+      background-size: 200px 100px;
+      /* 设置背景图是否需要重复，repeat-x 表示横向重复*/
+      background-repeat: no-repeat;
+      /* 画面充满整个容器，保持长宽比不变、超出的部分会隐藏 */
+      /* background-size: cover; */
+      /* 画面完整在容器展现，保持长宽比不变、但会有留白 */
+      /* background-size: contain; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container"></div>
+</body>
+
+</html>

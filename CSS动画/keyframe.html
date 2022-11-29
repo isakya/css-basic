@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 100px;
+      height: 100px;
+      background: red;
+
+      /* 使用关键帧动画 */
+      animation: run 1s linear;
+      /* 反向动画 */
+      /* animation-direction: reverse; */
+      /* 决定动画最后停止在哪里：forwards：动画停在动画最后一帧，backwards: 动画停在开始处 */
+      /* animation-fill-mode: forwards; */
+      /* 动画循环次数：infinite无限循环，数字表示循环几次 */
+      animation-iteration-count: infinite;
+      /* 播放状态：paused暂停动画 */
+      /* animation-play-state: paused; */
+    }
+
+    /* 关键帧动画 */
+    /* 可以是百分比，也可以是from、to 相当于0-100%*/
+    @keyframes run {
+      0% {
+        width: 100px;
+      }
+
+      50% {
+        width: 800px;
+      }
+
+      100% {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container"></div>
+</body>
+
+</html>

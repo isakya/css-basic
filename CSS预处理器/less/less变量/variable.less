@@ -1,0 +1,24 @@
+
+@fontSize: 12px;
+@bgColor: red;
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.wrapper{
+    // 变量计算
+    background:lighten(@bgColor, 40%);
+
+    .nav{
+        font-size: @fontSize;
+    }
+    .content{
+        // 变量计算
+        font-size: @fontSize + 2px;
+        &:hover{
+            background:@bgColor;
+        }
+    }
+}

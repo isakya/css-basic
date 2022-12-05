@@ -1,0 +1,31 @@
+
+$fontSize: 12px;
+$bgColor: red;
+// mixin定义
+@mixin block($fontSize){
+    font-size: $fontSize;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.wrapper{
+    background:lighten($bgColor, 40%);
+
+    .nav{
+        // mixin使用
+        @include block($fontSize);
+    }
+    .content{
+        @include block($fontSize + 2px);
+        &:hover{
+            background:red;
+        }
+    }
+}
+
+// scss必须加上@mixin才可以定义被复用的类，使用时还要加上@include

@@ -1,0 +1,39 @@
+@fontSize: 12px;
+@bgColor: red;
+// mixin定义(加括号，这段代码不会被编译出来)
+.block(@fontSize) {
+  font-size: @fontSize;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  background: lighten(@bgColor, 40%);
+  .nav {
+    // mixin使用
+    .block(@fontSize);
+  }
+  .content {
+    // mixin使用
+    .block(@fontSize + 2px);
+    &:hover {
+      background: red;
+    }
+  }
+
+}
+
+// mixin定义（不加括号，这段代码会被编译出来）
+.box {
+  font-size: 16px;
+}
+
+.box1 {
+  // mixin使用
+  .box();
+}

@@ -1,0 +1,30 @@
+
+@fontSize: 12px;
+@bgColor: red;
+
+.block{
+    font-size: @fontSize;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.wrapper{
+    background:lighten(@bgColor, 40%);
+
+    // 继承.block类
+    .nav:extend(.block){
+        color: #333;
+    }
+    // 第二种写法
+    .content{
+        &:extend(.block);
+        &:hover{
+            background:red;
+        }
+    }
+}

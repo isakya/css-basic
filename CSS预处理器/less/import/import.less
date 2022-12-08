@@ -1,0 +1,18 @@
+// 导入不同模块的less文件
+// 只要导入正确的话，变量等也是可以跨文件使用的
+@import "./my-import/import-variable";
+@import "./my-import/import-module1";
+@import "./my-import/import-module2";
+
+
+// 可以把所有模块的css组织起来
+@import "logo";
+@import "header";
+@import "nav";
+@import "article";
+@import "dialog";
+@import "foot";
+
+
+// 补充：css自身也有import，但是css的import不会把导入的css模块代码给统一编译到一个文件中，
+// 这样的话就会造成有多少个css文件，就会向后台发送多少个请求，从而拉低性能

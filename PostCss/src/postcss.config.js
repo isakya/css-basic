@@ -1,5 +1,5 @@
 const autoprefixer = require('autoprefixer')
-// const cssnano = require('cssnano')
+const cssnano = require('cssnano')
 
 // 自动合并@import 模块里面的代码到一个css文件当中
 const atImport = require('postcss-import')
@@ -25,7 +25,7 @@ module.exports = {
       // 指定Firefox > 30 的版本
       overrideBrowserslist: ['Firefox > 30']
     }),
-
-    // cssnano
+    // 压缩代码，压缩代码一般放到最后，这样压缩出来的就是生产代码了
+    cssnano
   ]
 }

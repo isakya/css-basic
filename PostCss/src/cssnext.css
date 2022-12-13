@@ -1,0 +1,9 @@
+/* css只支持用:root来定义变量 */
+:root {
+  /* 变量 */
+  --mainColor: red;
+}
+
+a {
+  color: var(--mainColor);
+}

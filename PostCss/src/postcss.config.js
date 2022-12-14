@@ -4,15 +4,15 @@
 // 自动合并@import 模块里面的代码到一个css文件当中
 // const atImport = require('postcss-import')
 
-const cssnext = require('postcss-cssnext')
-// const precss = require('precss')
+// const cssnext = require('postcss-cssnext')
+const precss = require('precss')
 
 
 module.exports = {
   plugins: [
     // atImport,
-    cssnext,
-    // precss,
+    // cssnext,
+    precss,
 
     // 自动加前缀的插件
     // autoprefixer({

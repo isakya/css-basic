@@ -1,3 +1,3 @@
-var module = require('./webpack-module')
+require('./webpack-css.css')
 
-module.say()
+console.log('hello')

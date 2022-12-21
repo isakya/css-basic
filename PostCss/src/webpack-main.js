@@ -1,3 +1,5 @@
-require('./webpack-css.css')
+const component = require('./webpack-component')
 
-console.log('hello')
+document.addEventListener('DOMContentLoaded', function () {
+  component.init(document.querySelector('#component'))
+})

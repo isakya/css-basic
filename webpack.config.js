@@ -22,6 +22,7 @@ module.exports = {
       }]
     }]
   },
+  // 拆分后的css代码输出的文件
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'css.css'

@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+框架中的CSS/vue/demo01/node_modules
+
+
+**/node_modules
